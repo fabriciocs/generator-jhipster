@@ -387,10 +387,10 @@ export default class LiquibaseGenerator extends BaseEntityChangesGenerator {
             {
               groupId: 'org.liquibase.ext',
               artifactId: 'liquibase-neo4j',
+              // eslint-disable-next-line no-template-curly-in-string
               version: '${liquibase.version}',
               // Exclude current v4 neo4j driver and use the v5 provided by spring-data
               // See: https://github.com/jhipster/generator-jhipster/pull/24241
-              // eslint-disable-next-line no-template-curly-in-string
               additionalContent: `
               <exclusions>
                   <exclusion>
