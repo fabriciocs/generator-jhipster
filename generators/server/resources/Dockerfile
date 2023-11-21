@@ -18,7 +18,7 @@ LABEL ALIAS=keycloak
 
 FROM mysql:8.2.0
 
-FROM mariadb:11.1.2
+FROM mariadb:11.1.3
 
 FROM mongo:7.0.3
 LABEL ALIAS=mongodb
@@ -55,7 +55,7 @@ LABEL ALIAS=sonar
 FROM docker.io/bitnami/consul:1.17.0
 LABEL ALIAS=consul
 
-FROM prom/prometheus:v2.47.2
+FROM prom/prometheus:v2.48.0
 LABEL ALIAS=prometheus
 
 FROM prom/alertmanager:v0.26.0
@@ -79,5 +79,5 @@ LABEL ALIAS=java-jre
 FROM swaggerapi/swagger-editor:latest
 LABEL ALIAS=swagger-editor
 
-FROM openzipkin/zipkin:2.24
+FROM openzipkin/zipkin:3.0
 LABEL ALIAS=zipkin
