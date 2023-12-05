@@ -13,25 +13,25 @@ LABEL ALIAS=consul-config-loader
 FROM postgres:16.1
 LABEL ALIAS=postgresql
 
-FROM quay.io/keycloak/keycloak:22.0.5
+FROM quay.io/keycloak/keycloak:23.0.1
 LABEL ALIAS=keycloak
 
 FROM mysql:8.2.0
 
-FROM mariadb:11.1.3
+FROM mariadb:11.2.2
 
-FROM mongo:7.0.3
+FROM mongo:7.0.4
 LABEL ALIAS=mongodb
 
 FROM couchbase/server:7.2.3
 LABEL ALIAS=couchbase
 
-FROM cassandra:3.11.14
+FROM cassandra:4.1.3
 
 FROM mcr.microsoft.com/mssql/server:2019-CU16-GDR1-ubuntu-20.04
 LABEL ALIAS=mssql
 
-FROM neo4j:5.13.0
+FROM neo4j:5.14.0
 
 FROM hazelcast/management-center:5.3.3
 LABEL ALIAS=hazelcast
@@ -46,7 +46,7 @@ LABEL ALIAS=kafka
 FROM confluentinc/cp-zookeeper:7.5.2
 LABEL ALIAS=zookeeper
 
-FROM apachepulsar/pulsar:3.0.1
+FROM apachepulsar/pulsar:3.1.1
 LABEL ALIAS=pulsar
 
 FROM sonarqube:10.3.0-community
