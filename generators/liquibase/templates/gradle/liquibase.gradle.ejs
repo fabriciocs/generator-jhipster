@@ -37,7 +37,7 @@ dependencies {
 <%_ } else if (databaseTypeNeo4j) { _%>
   // Exclude current v4 neo4j driver and use the v5 provided by spring-data
   // See: https://github.com/jhipster/generator-jhipster/pull/24241
-  implementation "org.liquibase.ext:liquibase-neo4j:${liquibaseVersion}", {
+  implementation ("org.liquibase.ext:liquibase-neo4j:${liquibaseVersion}") {
     exclude group: "org.neo4j.driver", module: "neo4j-java-driver"
   }
   implementation "org.springframework:spring-jdbc"
