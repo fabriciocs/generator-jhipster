@@ -77,7 +77,7 @@ jobs:
         run: $JHI_SCRIPTS/10-install-jhipster.sh
       - name: 'GENERATION: project'
         id: project
-        run: jhipster from-issue "$(echo ${{ matrix.linked-issue }} | cut -d "#" -f 2)" --no-code-workspace
+        run: jhipster from-issue "${{ matrix.linked-issue }}" --no-code-workspace
       - name: 'GENERATION: jhipster info'
         run: $JHI_SCRIPTS/14-jhipster-info.sh
       #----------------------------------------------------------------------
